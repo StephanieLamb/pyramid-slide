@@ -1,21 +1,28 @@
 //
 // var heightElem = document.getElementById("height");
-// var formElem = document.getElementById("draw-form");
+// var formElem = document.getElementById("shape");
 
-function buildPyramid(shape) {
-    var x = document.getElementById("shape").value;
-    document.getElementById("pyramid").innerHTML="";
+// function howHigh(height) {
+//     var pyramidHeight = document.getElementById("height").value;
+//     document.getElementById("pyramid").innerHTML = "" + pyramidHeight;
+// }
+//
+// function buildPyramid(shape) {
+//     var pyramidShape = document.getElementById("shape").value;
+//     document.getElementById("pyramid").innerHTML="" + pyramidShape;
+//
+//
+// }
 
 
-}
-
-function howHigh(height) {
-    var x = document.getElementById("height").value;
-    document.getElementById("pyramid").innerHTML = "";
-}
 
 function drawPyramid(height) {
 
+    var pyramidShape = document.getElementById("shape").value;
+    document.getElementById("pyramid").innerHTML="" + pyramidShape;
+
+    var pyramidHeight = document.getElementById("height").value;
+    document.getElementById("pyramid").innerHTML = "" + pyramidHeight;
 
     document.getElementById("pyramid").innerHTML = "";
 
@@ -30,7 +37,7 @@ function drawPyramid(height) {
             rowStr += spaceChar;
         }
         for (var i = 0; i < numBricks; i++) {
-            rowStr += "#";
+            rowStr += pyramidShape;
         }
         rowElem = document.createElement("p");
         rowElem.innerHTML = rowStr;
