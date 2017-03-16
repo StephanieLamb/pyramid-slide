@@ -42,5 +42,6 @@ function drawPyramid(height) {
         rowElem = document.createElement("p");
         rowElem.innerHTML = rowStr;
         document.getElementById("pyramid").appendChild(rowElem);
+        
     }
 }
